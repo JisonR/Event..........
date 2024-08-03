@@ -1,0 +1,278 @@
+*{
+    margin: 0;
+    padding:0;
+}
+.backgroundimage{
+    position: absolute;
+}
+.bgimg {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    
+}
+
+.main {
+    position: relative;
+    
+}
+
+.navbar {
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+}
+
+.icon {
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+
+.logo {
+    color: #ee0653;
+    font-size: 35px;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 29px;
+    font-weight: bold;
+    display: inline-block;
+    padding-left: 10px;
+    cursor: default;
+  
+}
+
+.menu {
+    width: 400px;
+    float: left;
+    height: 70px;
+    padding-top: 45px;
+    padding-left: 75vh;
+}
+
+ul {
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li {
+    list-style: none;
+    margin-left: 70px;
+    font-size: 20px;
+    position: relative; 
+}
+
+ul li a {
+    text-decoration: none;
+    color: #ee0653;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+.home a::before,
+.events a::before,
+.managers a::before,
+.login a:before {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0px;
+    width:0px;
+    height: 4px;
+    background-color: #ee0653;
+    transition: all 0.5s;
+}
+
+.home a:hover::before,
+.events a:hover::before,
+.managers a:hover::before,
+.login a:hover::before {
+    width: 100%;
+}
+.logoimg{
+    height:50px;
+    width: 20vh;
+    border-radius: 20px;
+    float: left;
+    margin-top: 32px;
+    
+}
+
+.head {
+    position: relative;
+    font-family: "Josefin Sans", sans-serif;
+    color: white;
+    display: inline-block;
+    font-size: 40px;
+    top: 40px;
+    left: 35vh;
+    letter-spacing: 10px;
+}
+
+span{
+    color: #ee0653;
+}
+
+
+.contentmain{
+    position: relative;
+    
+}
+
+.content h2{
+    color: #ee0653;
+    padding-left: 140px;
+    margin-top: -85px;
+    letter-spacing: 10px;
+
+}
+
+.content h3{
+    color: white;
+    font-size: 55px;
+    letter-spacing: 10px;
+    margin-left: -60px;
+}
+
+
+.content{
+   margin-left: 70vh;
+   margin-top: 20vh;
+   font-family: 'poppins',sans-serif;
+   font-size: 40px;
+   font-weight: 500;
+   
+}
+
+.content p{
+    color: white;
+    font-size: 15px;
+    padding-left: 40px;
+}
+
+.information  {
+    position: relative;
+    margin-left: 140vh;
+    margin-top: 20vh;
+    font-family: 'poppins',sans-serif;
+    letter-spacing: 1px;
+    color: #ee0653;
+    font-weight: 200;
+}
+
+.information h2 h3{
+    font-size: 10px;
+   
+}
+
+.onep{
+    padding-top: 10px;
+}
+
+.places
+{
+    position: relative;
+    color: honeydew;
+    font-family: 'poppins',sans-serif;
+    margin-top: -90px;
+    margin-left: 10vh;
+    
+}
+
+
+.two2{
+    padding-top: 10px;
+}
+
+.three3{
+    padding-top: 10px;
+}
+
+
+.button{
+    position: relative;
+    margin-top: -20vh;
+    margin-left: 70vh;
+   
+}
+
+
+.btn{
+    font-family: 'poppins',sans-serif;
+    font-size: 15px;
+}
+
+  .btn {
+    margin: 100px;
+    padding: 15px 40px;
+    border: none;
+    outline: none;
+    color: #FFF;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 12px;
+  }
+  .btn::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #ee0653;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+  }
+
+  .btn::before {
+    content: "";
+    background: linear-gradient(
+      35deg,
+      #FF0000, #FF7300, #FFFB00, #48FF00,
+      #00FFD5, #002BFF, #FF00C8, #FF0000
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 600%;
+    z-index: -1;
+    width: calc(100% + 4px);
+    height:  calc(100% + 4px);
+    filter: blur(2px);
+    animation: glowing 20s linear infinite;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+    opacity: 0;
+  }
+  
+  @keyframes glowing {
+    0% {background-position: 0 0;}
+    50% {background-position: 400% 0;}
+    100% {background-position: 0 0;}
+  }
+  
+  
+  .btn:hover::before {
+    opacity: 1;
+  }
+  
+  .btn:active:after {
+    background: transparent;
+  }
+  
+  .btn:active {
+    color: #000;
+    font-weight: bold;
+  }
+
+
+
+
+  .button a{
+    text-decoration: none;
+    color: white;
+    font-family: 'poppins',sans-serif;
+    font-weight: 300;
+  }
